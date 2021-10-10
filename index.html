@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mark</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Open Nodal -->
+    <h1 id="show-modal" data-bs-toggle="modal" data-bs-target="#modalAddBookmark">Add Bookmark</h1>
+    <!-- Bookmarks -->
+    <div class="container  " id="bookmarks-container">
+        <div class="row g-3">
+                <div class="item col-md " >
+                    <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+                    <div class="name">
+                        <img src="favicon.png" alt="Favicon">
+                        <a href="https://jacinto.design" target="_blank"> jacinto design</a>
+                    </div>
+                </div>
+                <div class="item col-md">
+                    <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+                    <div class="name">
+                        <img src="favicon.png" alt="Favicon">
+                        <a href="https://jacinto.design" target="_blank"> jacinto design</a>
+                    </div>
+                </div>
+                <div class="item col-md">
+                    <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+                    <div class="name">
+                        <img src="favicon.png" alt="Favicon">
+                        <a href="https://jacinto.design" target="_blank"> jacinto design</a>
+                    </div>
+                </div>
+          </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalAddBookmark" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Add New Bookmark</h5>
+          <button type="button" class="btn-close" id="close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="bookmarks-form">
+                <!-- Website Name -->
+                <div class="mb-3">
+                  <label for="website-name" class="form-label">Website Name</label>
+                  <input type="text" class="form-control" id="website-name" >
+                </div>
+                  <!-- Website URL -->
+                <div class="mb-3">
+                  <label for="website-url" class="form-label">Website URL</label>
+                  <input type="text" class="form-control" id="website-url">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+
+    
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    <script src="script.js"></script>
+</body>
+</html>
